@@ -1,6 +1,6 @@
 import Navigation from "@/components/Navigation";
 import routerConfig from "@/config/configRouter";
-import { BrowserRouter, Route, Routes } from "react-router";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router";
 import Container from "../Container";
 
 const AppRouter = () => {
