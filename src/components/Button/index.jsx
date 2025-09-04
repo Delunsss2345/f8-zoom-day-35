@@ -11,23 +11,29 @@ const Button = ({
   onClick,
   disabled,
   loading,
+  className,
+  ...passThrough
 }) => {
   const Component = href ? "a" : "button";
-
-  const className = clsx(styles.btn, {
-    [styles[`btn-primary`]]: primary,
-    [styles[`btn-${size}`]]: size,
-    [styles["btn-bordered"]]: bordered,
-    [styles["btn-rounded"]]: rounded,
-    [styles["btn-loading"]]: loading,
-  });
+  const classNames = clsx(
+    styles.btn,
+    {
+      [styles[`btn-primary`]]: primary,
+      [styles[`btn-${size}`]]: size,
+      [styles["btn-bordered"]]: bordered,
+      [styles["btn-rounded"]]: rounded,
+      [styles["btn-loading"]]: loading,
+      [styles["disabled"]]: disabled,
+    },
+    className
+  );
 
   return (
     <Component
-      disabled={disabled}
       href={href}
       onClick={onClick}
-      className={className}
+      className={classNames}
+      {...passThrough}
     >
       {children}
     </Component>
