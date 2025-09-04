@@ -32,7 +32,7 @@ function Profile() {
       <div className={styles.card}>
         <div className={styles["card-header"]}>
           <figure className={styles["avatar-placeholder"]}>
-            <img src="./public/avatar.jpg" alt="" />
+            <img src="avatar.jpg" alt="" />
           </figure>
 
           <div className={styles["profile-header"]}>

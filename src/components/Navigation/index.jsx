@@ -15,11 +15,7 @@ const Navigation = () => {
     <nav className={styles.navbar}>
       <Container>
         <div className={styles.logo}>
-          <img
-            className={styles.logoImage}
-            src="./public/devHuy-logo.png"
-            alt=""
-          />
+          <img className={styles.logoImage} src="devHuy-logo.png" alt="" />
         </div>
         <ul className={styles.navMenu}>
           {navItems.map((nav, index) => (
