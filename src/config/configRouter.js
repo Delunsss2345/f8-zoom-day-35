@@ -1,4 +1,5 @@
 import Buttons from "@/pages/Buttons";
+import CommentSystem from "@/pages/Comments";
 import Counter from "@/pages/Counter";
 import Home from "@/pages/Home";
 import Products from "@/pages/Products";
@@ -13,6 +14,7 @@ const routerConfig = [
   { path: "/profile", element: Profile },
   { path: "/products", element: Products },
   { path: "/weather", element: Weather },
+  { path: "/commentSystem", element: CommentSystem },
   { path: "/buttons", element: Buttons },
 ];
 

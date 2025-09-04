@@ -96,18 +96,53 @@
 .registerBtn:active {
   transform: translateY(0);
 }
+.menuMinize {
+  display: none;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+}
 
+.showMenu {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
 @media (max-width: 768px) {
   .container {
     padding: 0 16px;
   }
+  .menuMinize {
+    display: block;
+    cursor: pointer;
+  }
 
   .navMenu {
     display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 60px;
+    background-color: rgb(255, 255, 255);
+    padding: 0px;
+    gap: 0px;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    justify-content: space-between;
+  }
+  .navLink {
+    padding: 0 !important;
+    font-size: 15px;
+  }
+  .navLink:hover {
+    color: inherit !important;
+    background-color: transparent !important;
+    cursor: default;
   }
 
   .authButtons {
-    gap: 8px;
+    display: none;
   }
 
   .signInBtn,
