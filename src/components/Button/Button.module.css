@@ -40,18 +40,18 @@
 }
 
 .btn-small {
-  font-size: 14px;
+  font-size: 12px;
   padding: 4px 12px;
 }
 
 .btn-medium {
-  font-size: 16px;
+  font-size: 14px;
   padding: 8px 16px;
 }
 
 .btn-large {
   font-size: 18px;
-  padding: 12px 20px;
+  padding: 12px 25px;
 }
 
 .btn-loading {
