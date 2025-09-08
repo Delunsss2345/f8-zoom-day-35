@@ -30,12 +30,13 @@ const Button = ({
 
   return (
     <Component
-      href={href}
+      disabled={(disabled && Component === "button") || null}
+      href={disabled && Component === "a" ? "#!" : href}
       onClick={onClick}
       className={classNames}
       {...passThrough}
     >
-      {children}
+      {loading ? <span>{children}</span> : children}
     </Component>
   );
 };

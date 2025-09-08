@@ -57,8 +57,10 @@
 .btn-loading {
   position: relative;
   pointer-events: none;
-  text-indent: -9999px;
   overflow: hidden;
+}
+.btn-loading > span {
+  visibility: hidden;
 }
 .btn-loading::after {
   position: absolute;
